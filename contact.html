@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title></title>
+</head>
+<style>
+.hover-img{
+width:50%;
+transition:tranform 0.3s ease;
+border-radius:5px;
+}
+.hover-img:hover{
+transform:scale(1.1);
+box-shadow:0 4px 20px rgba(0,0,0,0.2);
+</style>
+<h1 style="font-size:50px;text-align:center;">About Us</h1>
+<div style="margin-bottom:40px;"></div>
+<style>
+body{
+background-image:url('background-img.webp');
+background-size:cover;
+background-repeat:no-repeat;
+}
+</style>
+<p style="font-size:20px;text-align:center;">Plan your Dream Wedding.</p>
+<div style="font-size:20px;text-align:center;"
+<p>To contact us.. Fill the below details and we will reach you through mail.</p>
+<style>
+ input[type="text"], input[type="email"] {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border: 1px solid #333;
+      background-color: pink;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: #007BFF;
+      color: white;
+      border: 1px solid #007BFF;
+    }
+  </style>
+</head>
+<body>
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your name" required>
+    <input type="email" id="email" placeholder="Your email" required>
+    <button type="button" onclick="submitForm()">Send Message</button>
+  </form>
+
+  <script>
+    function submitForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      if (name && email) {
+        alert(Thank you for visiting us, ${name}.\nWe will get back to you through mail.);
+        // Clear the URL (removes the ?)
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    }
+  </script>
+</body>
+<img  style="width:50%;margin-top:50px;"src="contact.webp" class="hover-img">
+<a  style=margin-top:30px;text-align:center;"href="example.html">Email:example.@gmail.com</a>
+<p>@Copy right:All Rihts are Reserved.</p>
+</html>
